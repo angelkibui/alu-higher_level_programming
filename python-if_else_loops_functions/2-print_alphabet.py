@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-print("{}".format("".join(chr(i) for i in range(97, 123))), end="")
-
-
-
-
+output = ""
+for letter in range(97, 123):
+    output += chr(letter)
+print(output, end="")

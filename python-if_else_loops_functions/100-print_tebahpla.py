@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+output = ""
 for i in range(122, 96, -1):
     if i % 2 == 0:
-        print(chr(i), end="")
+        output += chr(i)
     else:
-        print(chr(i - 32), end="")
+        output += chr(i - 32)
+print(output, end="")
